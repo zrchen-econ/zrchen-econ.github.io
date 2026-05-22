@@ -108,16 +108,14 @@ h2 {
 }
 
 .abstract-toggle {
-  margin-top: 0;
+  display: inline;
+  margin-left: 8px;
 }
 
 .abstract-toggle summary {
-  color: #1772d0;
+  color: inherit;
   cursor: pointer;
-}
-
-.abstract-toggle summary:hover {
-  color: #f09228;
+  display: inline;
 }
 
 .abstract-toggle p {
