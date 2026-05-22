@@ -109,8 +109,8 @@ h2 {
 
 .abstract-toggle {
   color: black;
-  display: inline;
-  margin-left: 8px;
+  display: block;
+  margin-left: 0;
 }
 
 .abstract-toggle summary {
