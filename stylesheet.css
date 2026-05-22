@@ -103,6 +103,26 @@ h2 {
   font-weight: 700;
 }
 
+.abstract-toggle {
+  margin-top: 8px;
+}
+
+.abstract-toggle summary {
+  color: #1772d0;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+}
+
+.abstract-toggle summary:focus,
+.abstract-toggle summary:hover {
+  color: #f09228;
+}
+
+.abstract-toggle p {
+  margin: 8px 0 0;
+}
+
 .name {
   padding-top: 20px;
   margin: 0;
