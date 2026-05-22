@@ -108,14 +108,13 @@ h2 {
 }
 
 .abstract-toggle {
-  display: inline;
-  margin-left: 8px;
+  color: black;
+  margin-top: 2px;
 }
 
 .abstract-toggle summary {
-  color: inherit;
+  color: black;
   cursor: pointer;
-  display: inline;
 }
 
 .abstract-toggle p {
