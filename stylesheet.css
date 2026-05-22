@@ -103,20 +103,12 @@ h2 {
   font-weight: 700;
 }
 
+.paper-meta {
+  margin-bottom: 2px;
+}
+
 .abstract-toggle {
-  margin-top: 2px;
-}
-
-.abstract-toggle summary {
-  color: #1772d0;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 15px;
-}
-
-.abstract-toggle summary:focus,
-.abstract-toggle summary:hover {
-  color: #f09228;
+  margin-top: 0;
 }
 
 .abstract-toggle p {
