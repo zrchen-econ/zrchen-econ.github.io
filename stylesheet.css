@@ -116,7 +116,21 @@ h2 {
 .abstract-toggle summary {
   color: black;
   cursor: pointer;
-  display: inline list-item;
+  display: inline;
+  list-style: none;
+}
+
+.abstract-toggle summary::-webkit-details-marker {
+  display: none;
+}
+
+.abstract-toggle summary::before {
+  content: "\25B6";
+  margin-right: 4px;
+}
+
+.abstract-toggle[open] summary::before {
+  content: "\25BE";
 }
 
 .abstract-toggle p {
