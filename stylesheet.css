@@ -116,7 +116,23 @@ h2 {
 .abstract-toggle summary {
   color: black;
   cursor: pointer;
-  display: inline list-item;
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  list-style: none;
+}
+
+.abstract-toggle summary::-webkit-details-marker {
+  display: none;
+}
+
+.abstract-toggle summary::before {
+  content: "\25B6";
+  line-height: 1.5;
+}
+
+.abstract-toggle[open] summary::before {
+  content: "\25BE";
 }
 
 .abstract-toggle p {
