@@ -110,7 +110,7 @@ h2 {
 .abstract-toggle {
   color: black;
   display: inline;
-  margin-left: 6px;
+  margin-left: 12px;
 }
 
 .abstract-toggle summary {
@@ -120,11 +120,14 @@ h2 {
   list-style: none;
 }
 
+.abstract-toggle summary::marker,
 .abstract-toggle summary::-webkit-details-marker {
   display: none;
+  content: "";
 }
 
 .abstract-toggle p {
+  display: block;
   margin: 3px 0 0;
 }
 
