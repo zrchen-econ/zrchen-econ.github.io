@@ -109,31 +109,19 @@ h2 {
 
 .abstract-toggle {
   color: black;
-  display: block;
-  margin-left: 0;
-  margin-top: 3px;
+  display: inline;
+  margin-left: 6px;
 }
 
 .abstract-toggle summary {
   color: black;
   cursor: pointer;
-  display: flex;
-  align-items: flex-start;
-  gap: 6px;
+  display: inline;
   list-style: none;
 }
 
 .abstract-toggle summary::-webkit-details-marker {
   display: none;
-}
-
-.abstract-toggle summary::before {
-  content: "\25B6";
-  line-height: 1.5;
-}
-
-.abstract-toggle[open] summary::before {
-  content: "\25BE";
 }
 
 .abstract-toggle p {
