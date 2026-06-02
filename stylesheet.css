@@ -99,12 +99,7 @@ h2 {
 
 h2 + p,
 h2 + .paper-meta {
-  margin-top: 0.7em;
-}
-
-.paper {
-  margin-top: 0.7em;
-  margin-bottom: 0;
+  margin-top: 0.8em;
 }
 
 .papertitle {
