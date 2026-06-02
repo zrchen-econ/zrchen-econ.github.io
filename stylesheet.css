@@ -115,10 +115,14 @@ h2 {
 }
 
 .abstract-toggle summary {
-  color: black;
+  color: #1772d0;
   cursor: pointer;
   display: inline;
   list-style: none;
+}
+
+.abstract-toggle summary:hover {
+  color: #f09228;
 }
 
 .abstract-toggle summary::marker,
