@@ -97,6 +97,11 @@ h2 {
   font-size: 23px;
 }
 
+h2 + p,
+h2 + .paper-meta {
+  margin-top: 0.6em;
+}
+
 .papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 15px;
