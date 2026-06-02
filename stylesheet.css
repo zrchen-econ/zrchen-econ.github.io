@@ -103,23 +103,33 @@ h2 {
   font-weight: 700;
 }
 
+.paper-meta {
+  margin-top: 1em;
+  margin-bottom: 2px;
+}
+
 .abstract-toggle {
   color: black;
-  cursor: pointer;
+  display: inline;
   margin-left: 12px;
 }
 
-.abstract-checkbox {
-  display: none;
+.abstract-toggle summary {
+  color: black;
+  cursor: pointer;
+  display: inline;
+  list-style: none;
 }
 
-.abstract-text {
+.abstract-toggle summary::marker,
+.abstract-toggle summary::-webkit-details-marker {
   display: none;
+  content: "";
 }
 
-.abstract-checkbox:checked ~ .abstract-text {
+.abstract-toggle p {
   display: block;
-  margin-top: 3px;
+  margin: 3px 0 0;
 }
 
 .name {
