@@ -64,7 +64,7 @@
 }
 
 a {
-  color: #3b8fe0;
+  color: #2a82da;
   text-decoration: none;
 }
 
@@ -120,7 +120,7 @@ h2 + .paper-meta {
 }
 
 .abstract-toggle summary {
-  color: #3b8fe0;
+  color: #2a82da;
   cursor: pointer;
   display: inline;
   list-style: none;
