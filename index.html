@@ -140,6 +140,8 @@
     #bio-zh-dialog {
       max-width: 500px;
       width: calc(100% - 48px);
+      max-height: calc(100dvh - 48px);
+      overflow-y: auto;
       border: none;
       border-radius: 16px;
       padding: 28px 28px 24px;
@@ -161,7 +163,7 @@
     }
 
     #bio-zh-dialog p {
-      margin-bottom: 12px;
+      margin: 0 0 16px;
     }
 
     #bio-zh-dialog .zh-note {
@@ -169,7 +171,7 @@
       color: var(--text-secondary);
       border-top: 1px solid var(--divider);
       padding-top: 12px;
-      margin-top: 64px;
+      margin-top: 90px;
     }
 
     #bio-zh-dialog .zh-close {
@@ -457,7 +459,7 @@
           <a href="https://www.linkedin.com/in/zhengrun-chen-51174a1b2/" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn">
             <svg class="icon-fill" viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
           </a>
-          <button class="horse-link" type="button" title="Chinese Bio" aria-label="Chinese Bio" onclick="document.getElementById('bio-zh-dialog').showModal()">
+          <button class="horse-link" type="button" title="Chinese Bio" aria-label="Chinese Bio" onclick="var dialog = document.getElementById('bio-zh-dialog'); dialog.showModal(); dialog.scrollTop = 0;">
             <svg viewBox="0 0 1024 1024" style="width:21px;height:21px;"><path id="horse-icon-path" style="fill:currentColor;stroke:none;"/></svg>
           </button>
         </div>
@@ -513,7 +515,7 @@
       <div class="entry">
         <p class="teaching-role">Teaching Assistant, Department of Economics, UNC Chapel Hill</p>
         <ul class="course-list">
-          <li><span class="course-name">ECON 470, Econometrics</span> &mdash; Fall 2023, 2025</li>
+          <li><span class="course-name">ECON 470, Econometrics</span> &mdash; Fall 2023, 2025, 2026</li>
           <li><span class="course-name">ECON 101, Introduction to Economics</span> &mdash; Spring 2025, 2024, 2023</li>
           <li><span class="course-name">ECON 420, Intermediate Macroeconomics</span> &mdash; Fall 2024</li>
           <li><span class="course-name">ECON 400, Data Science and Econometrics</span> &mdash; Fall 2022</li>
@@ -526,17 +528,30 @@
     </footer>
   </div>
 
-  <dialog id="bio-zh-dialog">
-    <h3>中文简介<span style="font-weight:400;color:var(--text-secondary);"> &middot; Chinese Bio</span></h3>
+  <dialog id="bio-zh-dialog" lang="zh-CN" aria-labelledby="bio-zh-title">
+    <h3 id="bio-zh-title" tabindex="-1" autofocus>中文简介<span style="font-weight:400;color:var(--text-secondary);"> &middot; Chinese Bio</span></h3>
     <p>
-      陈政润，北卡罗来纳大学教堂山分校 (UNC&nbsp;Chapel&nbsp;Hill) 经济学博士候选人，导师为Désiré&nbsp;Kédagni教授，本科就读于南开大学。
-      研究方向为计量经济学与因果推断，主要聚焦双重差分 (Difference-in-Differences) 方法，包括时变连续处理、存在中介变量情形下的因果识别，以及双重差分方法的稳健识别与推断。
+      陈政润，北卡罗来纳大学教堂山分校 (UNC&nbsp;Chapel&nbsp;Hill) 经济学博士候选人，
+      导师为 Désiré&nbsp;Kédagni 教授，本科就读于南开大学。
+      目前正在求职，主要考虑学术及研究类职位。
     </p>
+
     <p>
-      <strong>邮箱</strong>：zhengrun@unc.edu<br>
-      <strong>地址</strong>：141 South Road, Gardner Hall, CB 3305, Chapel&nbsp;Hill
+      主要研究领域为<strong>计量经济学和因果推断</strong>，研究兴趣包括双重差分、连续处理、面板数据和因果中介分析。
     </p>
-    <p class="zh-note">
+
+    <p>
+      我的 Job Market Paper 研究<strong>连续处理下的 Changes-in-Changes 模型</strong>，
+      探讨如何利用面板数据中的时间变化解决处理内生性问题，并识别不同处理水平下的反事实结果分布，
+      进而得到平均效应和其他分布效应。
+      此外，我的研究还涉及双重差分模型的稳健识别，以及存在时变中介变量时的因果识别与推断。
+    </p>
+
+    <p>
+      教学方面，可以承担计量经济学、应用计量经济学、因果推断等本科及研究生课程。
+    </p>
+
+    <p class="zh-note" lang="en">
       About this icon: The Flying Horse of Gansu (马踏飞燕/铜奔马) is a bronze sculpture from China's Eastern Han Dynasty (2nd century AD), created nearly 2,000 years ago and discovered in 1969 in Wuwei, Gansu Province.
     </p>
     <button class="zh-close" type="button" onclick="document.getElementById('bio-zh-dialog').close()">Close</button>
